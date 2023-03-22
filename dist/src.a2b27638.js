@@ -120,7 +120,8 @@ parcelRequire = (function (modules, cache, entry, globalName) {
 })({"src/index.js":[function(require,module,exports) {
 // let
 // letは上書可能、再宣言不可能
-var var1 = "初期値";
+var var1 = "初期値は1";
+var1 = "2に変更";
 console.log(var1);
 
 // const
@@ -131,6 +132,9 @@ var var2 = {
 };
 var2.value = 2;
 console.log(var2);
+var var3 = ["cat", "dog"];
+var3.push("monkey");
+console.log(var3);
 },{}],"node_modules/parcel-bundler/src/builtins/hmr-runtime.js":[function(require,module,exports) {
 var global = arguments[3];
 var OVERLAY_ID = '__parcel__error__overlay__';
@@ -156,7 +160,7 @@ var parent = module.bundle.parent;
 if ((!parent || !parent.isParcelRequire) && typeof WebSocket !== 'undefined') {
   var hostname = "" || location.hostname;
   var protocol = location.protocol === 'https:' ? 'wss' : 'ws';
-  var ws = new WebSocket(protocol + '://' + hostname + ':' + "43133" + '/');
+  var ws = new WebSocket(protocol + '://' + hostname + ':' + "35783" + '/');
   ws.onmessage = function (event) {
     checkedAssets = {};
     assetsToAccept = [];
