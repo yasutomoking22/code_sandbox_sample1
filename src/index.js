@@ -1,10 +1,13 @@
-import "./styles.css";
+// let
+// letは上書可能、再宣言不可能
+let var1 = "初期値";
+console.log(var1);
 
-document.getElementById("app").innerHTML = `
-<h1>Hello Vanilla!</h1>
-<div>
-  We use the same configuration as Parcel to bundle this sandbox, you can find more
-  info about Parcel 
-  <a href="https://parceljs.org" target="_blank" rel="noopener noreferrer">here</a>.
-</div>
-`;
+// const
+// constは上書不可、オブジェクトのみ上書可能
+const var2 = {
+  name: "初期値",
+  value: 1,
+};
+var2.value = 2;
+console.log(var2);
